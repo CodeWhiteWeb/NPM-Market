@@ -1,5 +1,6 @@
 {
   "name": "npm-market",
+  "publisher": "CodeWhiteWeb",
   "displayName": "NPM Market",
   "description": "A visual package manager for npm projects, inspired by the VS Code Extension Marketplace. Browse, install, update, and manage npm packages.",
   "version": "0.0.1",
