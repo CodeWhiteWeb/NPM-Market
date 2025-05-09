@@ -1,0 +1,47 @@
+body {
+    font-family: var(--vscode-font-family);
+    color: var(--vscode-foreground);
+    background-color: var(--vscode-editor-background);
+    padding: 16px;
+  }
+  
+  .metadata {
+    margin-bottom: 16px;
+  }
+  
+  .metadata h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .metadata ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .metadata li {
+    margin-bottom: 6px;
+    font-size: 13px;
+  }
+  
+  .metadata a {
+    color: var(--vscode-textLink-foreground);
+    text-decoration: none;
+  }
+  
+  .metadata a:hover {
+    text-decoration: underline;
+  }
+  
+  .readme {
+    font-size: 13px;
+    line-height: 1.5;
+    padding-top: 12px;
+  }
+  
+  .readme pre {
+    background: var(--vscode-editor-background);
+    padding: 10px;
+    overflow-x: auto;
+  }
+  

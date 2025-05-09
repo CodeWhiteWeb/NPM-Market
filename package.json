@@ -1,0 +1,66 @@
+{
+  "name": "npm-market",
+  "displayName": "NPM Market",
+  "description": "A visual package manager for npm projects, inspired by the VS Code Extension Marketplace. Browse, install, update, and manage npm packages.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.99.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "main": "./dist/extension.js",
+  "activationEvents": [
+    "onView:npmMarketView"
+  ],
+  "contributes": {
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "npmMarketSidebar",
+          "title": "NPM Market",
+          "icon": "media/icon.svg"
+        }
+      ]
+    },
+    "views": {
+      "npmMarketSidebar": [
+        {
+          "type": "webview",
+          "id": "npmMarketView",
+          "name": "NPM Packages",
+          "icon": "media/icon.svg"
+        }
+      ]
+    },
+    "commands": [
+      {
+        "command": "npm-market.open",
+        "title": "Open NPM Market",
+        "category": "View"
+      }
+    ]
+  },
+  "scripts": {
+    "compile": "tsc",
+    "watch": "tsc -w",
+    "package": "vsce package",
+    "pretest": "npm run compile",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^20.0.0",
+    "@types/vscode": "^1.99.0",
+    "@typescript-eslint/eslint-plugin": "^8.31.1",
+    "@typescript-eslint/parser": "^8.31.1",
+    "@vscode/test-electron": "^2.5.2",
+    "esbuild": "^0.25.3",
+    "eslint": "^9.0.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "axios": "^1.9.0",
+    "marked": "^15.0.11"
+  }
+}

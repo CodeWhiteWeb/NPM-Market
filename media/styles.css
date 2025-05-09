@@ -1,0 +1,117 @@
+body {
+  font-family: var(--vscode-font-family);
+  background-color: var(--vscode-sideBar-background);
+  color: var(--vscode-foreground);
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.search {
+  padding: 8px;
+  border-bottom: 1px solid var(--vscode-sideBar-border);
+}
+
+.search input {
+  width: 100%;
+  padding: 6px 10px;
+  font-size: 13px;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  background-color: var(--vscode-input-background);
+  color: var(--vscode-input-foreground);
+  border-radius: 4px;
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  max-height: calc(100vh - 45px); /* Adjust based on search height */
+  overflow-y: auto;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  height: 70px;
+  border-bottom: 1px solid var(--vscode-sideBar-border);
+  background-color: transparent;
+  transition: background-color 0.2s;
+  position: relative;
+  cursor: default;
+}
+
+.item:hover {
+  background-color: var(--vscode-list-hoverBackground);
+}
+
+.item-title {
+  font-weight: 600;
+  font-size: 13px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: var(--vscode-foreground);
+}
+
+.item-desc {
+  font-size: 12px;
+  color: var(--vscode-descriptionForeground);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 4px;
+}
+
+.item button {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  font-size: 12px;
+  padding: 3px 8px;
+  border: none;
+  background-color: var(--vscode-button-background);
+  color: var(--vscode-button-foreground);
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.item button:hover {
+  background-color: var(--vscode-button-hoverBackground);
+}
+
+
+.loading {
+  text-align: center;
+  color: var(--vscode-editor-foreground);
+  padding: 8px;
+}
+
+.hidden {
+  display: none;
+}
+
+.item-title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item-downloads {
+  font-size: 11px;
+  color: var(--vscode-descriptionForeground);
+  margin-left: 8px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
