@@ -19,7 +19,7 @@
         {
           "id": "npmMarketSidebar",
           "title": "NPM Market",
-          "icon": "media/icon.svg"
+          "icon": "https://raw.githubusercontent.com/CodeWhiteWeb/NPM-Market/refs/heads/main/media/icon.svg"
         }
       ]
     },
@@ -29,7 +29,7 @@
           "type": "webview",
           "id": "npmMarketView",
           "name": "NPM Packages",
-          "icon": "media/icon.svg"
+          "icon": "https://raw.githubusercontent.com/CodeWhiteWeb/NPM-Market/refs/heads/main/media/icon.svg"
         }
       ]
     },
